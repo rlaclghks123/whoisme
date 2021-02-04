@@ -1,0 +1,52 @@
+.find-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.find-header {
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.find-header div {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.find-form {
+  padding: 0px 25px;
+}
+.find-name {
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 5px;
+}
+.find-form input::placeholder {
+  padding-left: 20px;
+}
+.find-checkbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.find-login {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 0px 25px;
+}
+.greeting,
+.find-form {
+  display: none;
+}
+.showing {
+  display: block;
+  z-index: 5;
+}

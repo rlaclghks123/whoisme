@@ -1,0 +1,18 @@
+.hello {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.finally-header {
+  position: relative;
+}
+.finally-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: 150px;
+  top: 250px;
+}

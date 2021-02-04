@@ -1,0 +1,49 @@
+.index-header {
+  padding: 200px 0px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+  border-bottom: 1px solid tomato;
+}
+.index-header img {
+  width: 70%;
+  height: 95%;
+  position: absolute;
+  top: 0;
+  left: 55;
+  z-index: -1;
+}
+.index-header span {
+  padding-top: 50px;
+  margin-top: 100px;
+  display: block;
+}
+.index-main {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.index-main a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: tomato;
+  animation: fadeIn 1.5s linear infinite;
+}
+.index-main a:visited {
+  color: tomato;
+}
