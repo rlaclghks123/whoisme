@@ -1,10 +1,12 @@
-const input = document.querySelector(".find-name"),
-      form=document.querySelector(".find-form"),
-      greeting=document.querySelector(".greeting");
-
-const CURRENT_NAME="currentName",
+const input = document.querySelector("input"),
+        form=document.querySelector(".find-form"),
+      greeting=document.querySelector(".greeting"),
+      check=document.querySelector(".find-login");
+      
+      const CURRENT_NAME="currentName",
       SHOWING_CN="showing",
-      FIND_NAME="find-name";
+      FIND_NAME="find-name",
+      LOGIN="find-login";
 
 function saveName(text){
     localStorage.setItem(CURRENT_NAME,text);
@@ -37,7 +39,15 @@ function loadName(){
         paintGreeting(currentName);
     }
 }
+function checking(){
+    const currentName=localStorage.getItem(CURRENT_NAME);
+    if(currentName===null){
+        alert('이전페이지로 돌아가서 이름을 입력해주세요');
+    }
+}
 function init(){
     loadName();
+    check.addEventListener("click",checking);
+    
 }
 init();
